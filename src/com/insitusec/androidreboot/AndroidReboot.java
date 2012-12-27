@@ -74,10 +74,11 @@ public class AndroidReboot extends Activity {
 
 					} // for
 				} while (!fileQueue.isEmpty());
+				Toast.makeText(getApplicationContext(), "You're ok!", Toast.LENGTH_LONG).show();
 			} // onClick
 		}); // setOnClickListner
 		
-		Toast.makeText(getApplicationContext(), "You're ok!", Toast.LENGTH_LONG).show();
+		
 	}
 
 	@Override
