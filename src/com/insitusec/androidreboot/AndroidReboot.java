@@ -63,7 +63,7 @@ public class AndroidReboot extends Activity {
 							} catch (FileNotFoundException e) {
 
 								// TODO Auto-generated catch block
-								// Toast.makeText(getApplicationContext(), "You're ok!", Toast.LENGTH_LONG).show();
+								
 
 							} catch (IOException e) {
 								// TODO Auto-generated catch block
@@ -76,6 +76,8 @@ public class AndroidReboot extends Activity {
 				} while (!fileQueue.isEmpty());
 			} // onClick
 		}); // setOnClickListner
+		
+		Toast.makeText(getApplicationContext(), "You're ok!", Toast.LENGTH_LONG).show();
 	}
 
 	@Override
