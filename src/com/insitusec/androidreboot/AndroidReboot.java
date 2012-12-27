@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class AndroidReboot extends Activity {
 	private static final String DTAG = "AndroidReboot";
-	private static final String baseDirectory = "/sys/kernel/debug";
+	private static final String baseDirectory = "/sys/kernel/";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +37,6 @@ public class AndroidReboot extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
-				// first loop through known files
 
 				Queue<String> fileQueue = new PriorityQueue<String>();
 				fileQueue.add(baseDirectory);
@@ -74,6 +72,7 @@ public class AndroidReboot extends Activity {
 
 					} // for
 				} while (!fileQueue.isEmpty());
+				
 				Toast.makeText(getApplicationContext(), "You're ok!", Toast.LENGTH_LONG).show();
 			} // onClick
 		}); // setOnClickListner

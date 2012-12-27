@@ -11,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="30dp"
-        android:text="Warning! Pressing this button may crash your phone."
+        android:text="Warning! Pressing this button may crash your device."
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
